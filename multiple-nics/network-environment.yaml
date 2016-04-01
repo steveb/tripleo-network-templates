@@ -8,8 +8,8 @@ resource_registry:
 
 parameter_defaults:
   ControlPlaneSubnetCidr: '24'
-  ControlPlaneDefaultRoute: 9.1.1.1
-  EC2MetadataIp: 9.1.1.1
+  ControlPlaneDefaultRoute: 192.0.2.1
+  EC2MetadataIp: 192.0.2.1
   ExternalNetCidr: 8.1.1.0/24
   ExternalAllocationPools: [{"start": "8.1.1.10", "end": "8.1.1.50"}]
   ExternalInterfaceDefaultRoute: 8.1.1.1
@@ -22,4 +22,4 @@ parameter_defaults:
   StorageMgmtAllocationPools: [{"start": "172.19.0.10", "end": "172.19.0.250"}]
   TenantNetCidr: 172.16.0.0/24
   TenantAllocationPools: [{"start": "172.16.0.10", "end": "172.16.0.250"}]
-  DnsServers: ["11.1.1.1", "8.8.4.4"]
+  DnsServers: ["10.10.160.1", "8.8.4.4"]
